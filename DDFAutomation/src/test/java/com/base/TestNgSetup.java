@@ -17,7 +17,7 @@ public class TestNgSetup {
 	public void setup() throws IOException{
 		
 		
-		FileInputStream fis = new FileInputStream("D:\\workspace\\DDFAutomation\\Resource\\data\\data.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\user\\git\\AutomationCode\\DDFAutomation\\Resource\\data\\data.properties");
 		Properties prop = new Properties();
 		
 		prop.load(fis);
@@ -25,7 +25,7 @@ public class TestNgSetup {
 		String url =prop.getProperty("URL");
 		
 		
-		System.setProperty("webdriver.chrome.driver","D:\\workspace\\DDFAutomation\\Resource\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\user\\git\\AutomationCode\\DDFAutomation\\Resource\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
 	
